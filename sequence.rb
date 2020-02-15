@@ -5,6 +5,10 @@ class Sequence
     @element = first_element.to_s
   end
 
+  def to_s
+    element
+  end
+
   def custom_next
     self.class.new(next_element)
   end
